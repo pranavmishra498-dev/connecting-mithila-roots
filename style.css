@@ -838,3 +838,1080 @@ a {
         gap: 15px;
     }
 }
+
+/* Personal WhatsApp Contact Widget */
+
+.whatsapp-widget {
+    position: fixed;
+    right: 28px;
+    bottom: 28px;
+    z-index: 9999;
+}
+
+.whatsapp-menu {
+    position: relative;
+}
+
+.whatsapp-float-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 21px;
+    background: #217653;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
+    transition: 0.3s ease;
+}
+
+.whatsapp-float-button::-webkit-details-marker {
+    display: none;
+}
+
+.whatsapp-float-button:hover {
+    background: #185d40;
+    transform: translateY(-3px);
+}
+
+.whatsapp-float-button span:first-child {
+    font-size: 23px;
+}
+
+.whatsapp-options {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    width: 320px;
+    padding: 18px;
+    background: #fffdf8;
+    border: 1px solid #eadfcd;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.14);
+}
+
+.whatsapp-menu-heading {
+    margin-bottom: 15px;
+}
+
+.whatsapp-menu-heading strong {
+    color: #173d30;
+    font-size: 18px;
+}
+
+.whatsapp-menu-heading p {
+    margin-top: 5px;
+    color: #777;
+    font-size: 13px;
+}
+
+.whatsapp-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 10px;
+    margin-top: 8px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #173d30;
+    transition: 0.2s ease;
+}
+
+.whatsapp-option:hover {
+    background: #edf5ee;
+}
+
+.whatsapp-option-icon {
+    font-size: 25px;
+}
+
+.whatsapp-option strong {
+    display: block;
+    font-size: 14px;
+}
+
+.whatsapp-option small {
+    display: block;
+    margin-top: 4px;
+    color: #777;
+    font-size: 11px;
+}
+
+@media (max-width: 480px) {
+    .whatsapp-widget {
+        right: 15px;
+        bottom: 18px;
+    }
+
+    .whatsapp-options {
+        width: min(300px, calc(100vw - 30px));
+    }
+
+    .whatsapp-float-button {
+        padding: 13px 17px;
+    }
+}
+/* SUGGESTED QUESTIONS */
+
+.suggested-questions {
+    padding: 15px 18px;
+    background: #fffdf8;
+    border-top: 1px solid #eee5d6;
+}
+
+.suggested-questions p {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--dark-green);
+    margin-bottom: 10px;
+}
+
+.question-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.suggestion-btn {
+    padding: 8px 13px;
+    border: 1px solid #d9cbb3;
+    border-radius: 20px;
+    background: var(--cream);
+    color: var(--green);
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.suggestion-btn:hover {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+.suggestion-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+    .suggested-questions {
+        padding: 12px;
+    }
+
+    .suggestion-btn {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
+}
+/* CHATBOT + WORD OF THE DAY LAYOUT */
+
+.chat-feature-layout {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* WORD OF THE DAY CARD */
+
+.word-day-card {
+    background: var(--cream);
+    border: 1px solid #e5d8c2;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.word-day-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--green);
+    font-weight: 700;
+}
+
+.word-day-header p {
+    margin: 0;
+}
+
+.word-day-content {
+    padding: 30px 0;
+}
+
+.word-day-label {
+    color: var(--terracotta);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.word-day-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: var(--dark-green);
+    margin: 15px 0 5px;
+}
+
+.word-pronunciation {
+    color: #8b7964;
+    margin-bottom: 25px;
+}
+
+.word-meaning,
+.word-example {
+    border-top: 1px solid #e5d8c2;
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.word-meaning h4,
+.word-example h4 {
+    color: var(--green);
+    margin-bottom: 8px;
+}
+
+.word-meaning p,
+.word-example p {
+    color: #655b4e;
+    line-height: 1.7;
+}
+
+.word-day-footer {
+    font-size: 12px;
+    color: #8b7964;
+    border-top: 1px solid #e5d8c2;
+    padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .chat-feature-layout {
+        grid-template-columns: 1fr;
+    }
+}
+/* Chatbot and Word Card Size Adjustment */
+
+.chat-feature-layout {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.8fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* Smaller Word of the Day Card */
+.word-day-card {
+    padding: 18px;
+}
+
+.word-day-header {
+    gap: 7px;
+}
+
+.word-day-header span {
+    font-size: 17px;
+}
+
+.word-day-header p {
+    font-size: 13px;
+}
+
+.word-day-content {
+    padding: 18px 0;
+}
+
+.word-day-content h2 {
+    font-size: 29px;
+    margin: 10px 0 4px;
+}
+
+.word-pronunciation {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.word-meaning,
+.word-example {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.word-meaning h4,
+.word-example h4 {
+    font-size: 13px;
+}
+
+.word-meaning p,
+.word-example p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.word-day-footer {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .chat-feature-layout {
+        grid-template-columns: 1fr;
+    }
+}/* EXTRA COMPACT WORD OF THE DAY */
+
+.chat-feature-layout {
+    grid-template-columns: minmax(180px, 0.45fr) minmax(0, 2fr);
+    gap: 20px;
+}
+
+.word-day-card {
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.word-day-header span {
+    font-size: 14px;
+}
+
+.word-day-header p {
+    font-size: 11px;
+}
+
+.word-day-content {
+    padding: 12px 0;
+}
+
+.word-day-label {
+    font-size: 10px;
+}
+
+.word-day-content h2 {
+    font-size: 23px;
+    margin: 7px 0 2px;
+}
+
+.word-pronunciation {
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.word-meaning,
+.word-example {
+    padding-top: 7px;
+    margin-top: 7px;
+}
+
+.word-meaning h4,
+.word-example h4 {
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.word-meaning p,
+.word-example p {
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.word-day-footer {
+    font-size: 9px;
+    padding-top: 8px;
+}
+
+@media (max-width: 768px) {
+    .chat-feature-layout {
+        grid-template-columns: 1fr;
+    }
+}/* PREMIUM MITHILA WORD OF THE DAY CARD */
+
+.word-day-card {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #fffaf0, #f5e9ff);
+    border: 1px solid rgba(126, 72, 160, 0.18);
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 8px 25px rgba(77, 35, 100, 0.10);
+    transition: all 0.3s ease;
+}
+
+.word-day-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(77, 35, 100, 0.16);
+}
+
+/* Decorative background circle */
+.word-day-card::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(225, 177, 74, 0.12);
+    border-radius: 50%;
+    top: -55px;
+    right: -45px;
+}
+
+.word-day-header {
+    position: relative;
+    border-bottom: 1px solid rgba(126, 72, 160, 0.15);
+    padding-bottom: 10px;
+}
+
+.word-day-header span {
+    color: #713b91;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.word-day-header p {
+    color: #88758f;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.word-day-content {
+    position: relative;
+    padding: 16px 0;
+}
+
+.word-day-label {
+    color: #a07836;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.word-day-content h2 {
+    color: #632d83;
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin: 8px 0 3px;
+}
+
+.word-pronunciation {
+    color: #9879a5;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.word-meaning,
+.word-example {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(126, 72, 160, 0.10);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.word-meaning h4,
+.word-example h4 {
+    color: #754394;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.word-meaning p,
+.word-example p {
+    color: #62546a;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.word-day-footer {
+    color: #9a8050;
+    font-size: 10px;
+    border-top: 1px solid rgba(126, 72, 160, 0.15);
+    padding-top: 10px;
+    text-align: center;
+}
+/* LANGUAGE SELECTOR */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.language-selector label {
+    color: #6b4b7a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.language-selector select {
+    padding: 7px 12px;
+    border: 1px solid #d8c2e5;
+    border-radius: 8px;
+    background: #fff;
+    color: #663783;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+}
+
+.language-selector select:focus {
+    border-color: #8b50a8;
+    box-shadow: 0 0 0 2px rgba(139, 80, 168, 0.12);
+}
+/* =================================
+   SHARE YOUR MITHILA STORY
+================================= */
+
+.share-story-section {
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #fffaf1, #f7effb);
+}
+
+.share-story-container {
+    max-width: 850px;
+    margin: auto;
+    background: #ffffff;
+    padding: 38px;
+    border-radius: 22px;
+    border: 1px solid rgba(112, 61, 139, 0.12);
+    box-shadow: 0 12px 35px rgba(76, 37, 95, 0.09);
+}
+
+/* Heading */
+
+.share-story-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.share-story-heading span {
+    color: #b18a3d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.share-story-heading h2 {
+    color: #663783;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.share-story-heading p {
+    color: #777080;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Form */
+
+.story-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.story-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.story-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.story-field label {
+    color: #51345f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.story-field input,
+.story-field select,
+.story-field textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #e4d8eb;
+    border-radius: 10px;
+    background: #fdfbff;
+    color: #403747;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+.story-field input:focus,
+.story-field select:focus,
+.story-field textarea:focus {
+    border-color: #8952a5;
+    box-shadow: 0 0 0 3px rgba(137, 82, 165, 0.10);
+    background: #ffffff;
+}
+
+.story-field textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+/* Submit Button */
+
+.story-submit-btn {
+    align-self: flex-start;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #70418c, #9256a8);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.story-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(112, 65, 140, 0.25);
+}
+
+.story-status {
+    font-size: 12px;
+    color: #6c4382;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    .share-story-section {
+        padding: 45px 15px;
+    }
+
+    .share-story-container {
+        padding: 23px 17px;
+        border-radius: 16px;
+    }
+
+    .share-story-heading h2 {
+        font-size: 25px;
+    }
+
+    .story-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .story-submit-btn {
+        width: 100%;
+    }
+}
+/* COMPACT & PREMIUM STORY SECTION */
+
+.share-story-section {
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #fffaf3, #f5eff9);
+}
+
+.share-story-container {
+    max-width: 680px;
+    margin: auto;
+    padding: 25px 28px;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid #eadcf0;
+    box-shadow: 0 10px 30px rgba(81, 43, 100, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.share-story-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #70418c, #d5a64a, #70418c);
+}
+
+/* HEADING */
+
+.share-story-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.share-story-heading span {
+    color: #b18a3d;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.share-story-heading h2 {
+    font-family: 'Playfair Display', serif;
+    color: #663783;
+    font-size: 26px;
+    margin: 7px 0;
+}
+
+.share-story-heading p {
+    color: #82768a;
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 480px;
+    margin: auto;
+}
+
+/* FORM */
+
+.story-form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.story-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.story-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.story-field label {
+    color: #57376a;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.story-field input,
+.story-field select,
+.story-field textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e8deed;
+    border-radius: 8px;
+    background: #fdfbff;
+    color: #45364d;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+    transition: 0.25s;
+}
+
+.story-field input:focus,
+.story-field select:focus,
+.story-field textarea:focus {
+    border-color: #8952a5;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(137, 82, 165, 0.08);
+}
+
+.story-field textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+/* BUTTON */
+
+.story-submit-btn {
+    align-self: center;
+    padding: 11px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #70418c, #9256a8);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.story-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(112, 65, 140, 0.22);
+}
+
+.story-status {
+    text-align: center;
+    font-size: 11px;
+    color: #70418c;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+    .share-story-section {
+        padding: 30px 14px;
+    }
+
+    .share-story-container {
+        padding: 23px 17px;
+    }
+
+    .share-story-heading h2 {
+        font-size: 23px;
+    }
+
+    .story-form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ========================================
+   GIVE FEEDBACK SECTION
+======================================== */
+
+.feedback-section {
+    position: relative;
+    padding: 90px 20px;
+    background: linear-gradient(
+        135deg,
+        #fffaf2 0%,
+        #fff3e6 50%,
+        #fffaf5 100%
+    );
+    overflow: hidden;
+}
+
+.feedback-container {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Heading */
+
+.feedback-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.feedback-heading .section-label {
+    display: inline-block;
+    color: #b76b35;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.feedback-heading h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #38251d;
+    margin-bottom: 15px;
+}
+
+.feedback-heading h2 span {
+    color: #c56b36;
+}
+
+.feedback-heading p {
+    color: #79665b;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Feedback Form Card */
+
+.feedback-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #f0dfd0;
+    box-shadow: 0 15px 45px rgba(100, 57, 30, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-form:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px rgba(100, 57, 30, 0.13);
+}
+
+/* Form Fields */
+
+.feedback-field {
+    margin-bottom: 25px;
+}
+
+.feedback-field label {
+    display: block;
+    color: #38251d;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feedback-field label span {
+    color: #a18c7e;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.feedback-field input,
+.feedback-field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #eadbce;
+    border-radius: 10px;
+    background: #fffcf9;
+    color: #38251d;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.feedback-field textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.feedback-field input:focus,
+.feedback-field textarea:focus {
+    border-color: #c56b36;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(197, 107, 54, 0.10);
+}
+
+.feedback-field input::placeholder,
+.feedback-field textarea::placeholder {
+    color: #b5a49a;
+}
+
+/* Star Rating */
+
+.feedback-rating-field {
+    border: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+
+.feedback-rating-field legend {
+    color: #38251d;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.feedback-rating-options {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 8px;
+    width: fit-content;
+}
+
+.feedback-rating-options input {
+    display: none;
+}
+
+.feedback-rating-options label {
+    font-size: 35px;
+    color: #ded6cf;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.feedback-rating-options label:hover {
+    transform: scale(1.15);
+}
+
+.feedback-rating-options label:hover,
+.feedback-rating-options label:hover ~ label,
+.feedback-rating-options input:checked ~ label {
+    color: #f2ad36;
+}
+
+/* Submit Button */
+
+.feedback-submit-btn {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #bd6735, #934522);
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feedback-submit-btn:hover {
+    background: linear-gradient(135deg, #a95629, #783719);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(147, 69, 34, 0.22);
+}
+
+.feedback-submit-btn:active {
+    transform: scale(0.98);
+}
+
+/* Feedback Status */
+
+.feedback-status {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4b8052;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .feedback-section {
+        padding: 65px 18px;
+    }
+
+    .feedback-heading h2 {
+        font-size: 30px;
+    }
+
+    .feedback-form {
+        padding: 28px 22px;
+    }
+
+    .feedback-rating-options label {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .feedback-heading h2 {
+        font-size: 27px;
+    }
+
+    .feedback-heading p {
+        font-size: 14px;
+    }
+
+    .feedback-form {
+        padding: 24px 18px;
+    }
+
+}

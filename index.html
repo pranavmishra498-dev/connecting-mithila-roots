@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,6 +21,7 @@
 
     <!-- Navigation -->
     <header class="navbar">
+
         <a href="#home" class="logo">
             <span class="logo-icon">✿</span>
             <span>Connecting <strong>Mithila Roots</strong></span>
@@ -31,10 +31,13 @@
             <a href="#home">Home</a>
             <a href="#products">Our Products</a>
             <a href="#chat">AI Assistant</a>
+            <a href="#share-story">Share Your Story</a>
+            <a href="#feedback">Feedback</a>
             <a href="#about">About Us</a>
         </nav>
 
         <a href="#chat" class="nav-button">Explore with AI ↗</a>
+
     </header>
 
 
@@ -59,6 +62,7 @@
             </p>
 
             <div class="hero-actions">
+
                 <a href="#chat" class="hero-button">
                     Explore with Mithila AI ↗
                 </a>
@@ -66,6 +70,7 @@
                 <a href="#products" class="secondary-button">
                     Discover Products
                 </a>
+
             </div>
 
             <div class="hero-note">
@@ -100,6 +105,7 @@
 
             <div class="floating-note">
                 <span>🌸</span>
+
                 <div>
                     <strong>Rich Heritage</strong>
                     <small>Timeless traditions</small>
@@ -113,15 +119,21 @@
 
     <!-- Introduction Strip -->
     <section class="intro-strip">
+
         <div>✿ संस्कृति</div>
         <span>✦</span>
+
         <div>भाषा</div>
         <span>✦</span>
+
         <div>परंपरा</div>
         <span>✦</span>
+
         <div>साहित्य</div>
         <span>✦</span>
+
         <div>Heritage</div>
+
     </section>
 
 
@@ -129,17 +141,22 @@
     <section id="products" class="products section-padding">
 
         <div class="section-heading">
+
             <span class="section-label">EXPLORE OUR ECOSYSTEM</span>
+
             <h2>Discover Our <span>Products</span></h2>
+
             <p>
                 Explore platforms that celebrate and preserve
                 the language, knowledge and traditions of Mithila.
             </p>
+
         </div>
 
 
         <div class="product-container">
 
+            <!-- Mithila Dictionary -->
             <div class="product-card dictionary-card">
 
                 <div class="product-icon">📖</div>
@@ -157,12 +174,15 @@
                    target="_blank"
                    rel="noopener noreferrer"
                    class="product-button">
+
                     Explore Product ↗
+
                 </a>
 
             </div>
 
 
+            <!-- DevtaPittar -->
             <div class="product-card puja-card">
 
                 <div class="product-icon">🪔</div>
@@ -180,12 +200,15 @@
                    target="_blank"
                    rel="noopener noreferrer"
                    class="product-button">
+
                     Explore Product ↗
+
                 </a>
 
             </div>
 
 
+            <!-- Gyan Changera -->
             <div class="product-card books-card">
 
                 <div class="product-icon">📚</div>
@@ -214,67 +237,203 @@
     <section id="chat" class="ai-chat-section section-padding">
 
         <div class="section-heading">
+
             <span class="section-label">YOUR DIGITAL MITHILA GUIDE</span>
+
             <h2>Meet <span>Mithila AI</span></h2>
+
             <p>
                 Ask questions, discover traditions and learn
                 about Mithila with your AI assistant.
             </p>
+
         </div>
 
 
-        <div class="chat-container">
+        <!-- Chatbot + Word of the Day Layout -->
+        <div class="chat-feature-layout">
 
-            <div class="chat-header">
 
-                <div class="chat-avatar">✿</div>
+            <!-- Maithili Word of the Day -->
+            <div class="word-day-card">
 
-                <div class="chat-header-info">
-                    <h2>Mithila AI Assistant</h2>
-                    <p>
-                        <span class="online-dot"></span>
-                        Your cultural knowledge companion
+                <div class="word-day-header">
+                    <span>📖</span>
+                    <p>Maithili Word of the Day</p>
+                </div>
+
+
+                <div class="word-day-content">
+
+                    <span class="word-day-label">
+                        आजुक मैथिली शब्द
+                    </span>
+
+                    <h2 id="dailyWord">प्रणाम</h2>
+
+                    <p id="dailyPronunciation" class="word-pronunciation">
+                        Pranaam
                     </p>
+
+
+                    <div class="word-meaning">
+
+                        <h4>Meaning</h4>
+
+                        <p id="dailyMeaning">
+                            नमस्कार / Greetings
+                        </p>
+
+                    </div>
+
+
+                    <div class="word-example">
+
+                        <h4>Example</h4>
+
+                        <p id="dailyExample">
+                            प्रणाम! अहाँ केहन छी?
+                        </p>
+
+                    </div>
+
                 </div>
 
-                <div class="chat-language">EN | मैथिली</div>
 
-            </div>
-
-
-            <div id="chatMessages" class="chat-messages">
-
-                <div class="bot-message">
-                    Namaste! 🙏 Welcome to Connecting Mithila Roots.
-
-                    प्रणाम! 🙏 Connecting Mithila Roots में अहाँक स्वागत अछि।
-
-                    How can I help you explore Mithila?
-
-                    अहाँ मिथिलाक बारे में की जानय चाहैत छी?
+                <div class="word-day-footer">
+                    ✦ Learn a little Maithili every day
                 </div>
 
             </div>
 
 
-            <div class="chat-input-area">
 
-                <input
-                    type="text"
-                    id="userInput"
-                    placeholder="Ask anything about Mithila..."
-                >
+            <!-- Mithila AI Chatbot -->
+            <div class="chat-container">
 
-                <button id="sendButton" type="button">
-                    Send ↗
-                </button>
 
-            </div>
+                <!-- Chat Header -->
+                <div class="chat-header">
 
-            <p id="chatStatus"></p>
+                    <div class="language-selector">
+                        <label for="chatLanguage">🌐 Language:</label>
 
-            <div class="chat-footer-note">
-                ✦ Powered by AI • Inspired by Mithila
+                        <select id="chatLanguage">
+                            <option value="en">English</option>
+                            <option value="hi">हिंदी</option>
+                            <option value="mai">मैथिली</option>
+                        </select>
+                    </div>
+
+                    <div class="chat-avatar">✿</div>
+
+                    <div class="chat-header-info">
+
+                        <h2>Mithila AI Assistant</h2>
+
+                        <p>
+                            <span class="online-dot"></span>
+                            Your cultural knowledge companion
+                        </p>
+
+                    </div>
+
+                    <div class="chat-language">
+                        EN | मैथिली
+                    </div>
+
+                </div>
+
+
+
+                <!-- Chat Messages -->
+                <div id="chatMessages" class="chat-messages">
+
+                    <div class="bot-message">
+
+                        Namaste! 🙏 Welcome to Connecting Mithila Roots.
+
+                        प्रणाम! 🙏 Connecting Mithila Roots में अहाँक स्वागत अछि।
+
+                        How can I help you explore Mithila?
+
+                        अहाँ मिथिलाक बारे में की जानय चाहैत छी?
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Suggested Questions -->
+                <div class="suggested-questions">
+
+                    <p>✨ Explore Mithila – Try asking</p>
+
+                    <div class="question-list">
+
+                        <button class="suggestion-btn"
+                                data-question="Who was Vidyapati?">
+
+                            Who was Vidyapati?
+
+                        </button>
+
+
+                        <button class="suggestion-btn"
+                                data-question="Tell me about Mithila culture">
+
+                            Mithila Culture
+
+                        </button>
+
+
+                        <button class="suggestion-btn"
+                                data-question="Tell me about Madhushravani and other famous festivals of Mithila">
+
+                            Famous Festivals
+
+                        </button>
+
+
+                        <button class="suggestion-btn"
+                                data-question="Can you teach me Maithili language?">
+
+                            Learn Maithili
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Chat Input -->
+                <div class="chat-input-area">
+
+                    <input
+                        type="text"
+                        id="userInput"
+                        placeholder="Ask anything about Mithila..."
+                    >
+
+                    <button id="sendButton" type="button">
+                        Send ↗
+                    </button>
+
+                </div>
+
+
+                <!-- Chat Status -->
+                <p id="chatStatus"></p>
+
+
+                <!-- Chat Footer -->
+                <div class="chat-footer-note">
+                    ✦ Powered by AI • Inspired by Mithila
+                </div>
+
             </div>
 
         </div>
@@ -282,14 +441,214 @@
     </section>
 
 
-    <!-- About Section -->
+
+    <!-- SHARE YOUR MITHILA STORY -->
+    <section class="share-story-section" id="share-story">
+
+        <div class="share-story-container">
+
+            <div class="share-story-heading">
+                <span>OUR CULTURE, OUR MEMORIES</span>
+
+                <h2>Share Your Mithila Story</h2>
+
+                <p>
+                    Every Mithila family has a story.
+                    Share yours and help preserve our culture,
+                    traditions and memories for future generations.
+                </p>
+            </div>
+
+
+            <form id="storyForm" class="story-form">
+
+                <div class="story-form-row">
+
+                    <div class="story-field">
+                        <label for="storyName">Your Name</label>
+
+                        <input
+                            type="text"
+                            id="storyName"
+                            placeholder="Enter your name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="story-field">
+                        <label for="storyLocation">Your Location</label>
+
+                        <input
+                            type="text"
+                            id="storyLocation"
+                            placeholder="e.g. Darbhanga, Delhi"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="story-field">
+                    <label for="storyCategory">Story Category</label>
+
+                    <select id="storyCategory" required>
+                        <option value="">Select a category</option>
+                        <option value="Family Memories">Family Memories</option>
+                        <option value="Festivals and Traditions">Festivals and Traditions</option>
+                        <option value="Maithili Language">Maithili Language</option>
+                        <option value="Mithila Food">Mithila Food</option>
+                        <option value="Personal Experience">Personal Experience</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+
+                <div class="story-field">
+                    <label for="storyMessage">Your Story</label>
+
+                    <textarea
+                        id="storyMessage"
+                        rows="5"
+                        placeholder="Share your memories, experiences or traditions..."
+                        required
+                    ></textarea>
+                </div>
+
+
+                <button type="submit" class="story-submit-btn">
+                    Share My Story →
+                </button>
+
+                <p id="storyStatus" class="story-status"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- GIVE FEEDBACK SECTION -->
+    <section id="feedback" class="feedback-section section-padding">
+
+        <div class="feedback-container">
+
+            <div class="feedback-heading">
+
+                <span class="section-label">YOUR VOICE MATTERS</span>
+
+                <h2>Share Your <span>Feedback</span></h2>
+
+                <p>
+                    Help us improve Connecting Mithila Roots.
+                    Tell us about your experience and what we can do better.
+                </p>
+
+            </div>
+
+
+            <form id="feedbackForm" class="feedback-form">
+
+
+                <!-- Name (Optional) -->
+                <div class="feedback-field">
+
+                    <label for="feedbackName">
+                        Your Name <span>(Optional)</span>
+                    </label>
+
+                    <input
+                        type="text"
+                        id="feedbackName"
+                        name="name"
+                        placeholder="Enter your name"
+                        maxlength="100"
+                    >
+
+                </div>
+
+
+
+                <!-- Star Rating -->
+                <fieldset class="feedback-rating-field">
+
+                    <legend>How would you rate your experience?</legend>
+
+                    <div class="feedback-rating-options">
+
+                        <input type="radio" id="rating1" name="feedbackRating" value="1" required>
+                        <label for="rating1" aria-label="1 star">★</label>
+
+                        <input type="radio" id="rating2" name="feedbackRating" value="2">
+                        <label for="rating2" aria-label="2 stars">★</label>
+
+                        <input type="radio" id="rating3" name="feedbackRating" value="3">
+                        <label for="rating3" aria-label="3 stars">★</label>
+
+                        <input type="radio" id="rating4" name="feedbackRating" value="4">
+                        <label for="rating4" aria-label="4 stars">★</label>
+
+                        <input type="radio" id="rating5" name="feedbackRating" value="5">
+                        <label for="rating5" aria-label="5 stars">★</label>
+
+                    </div>
+
+                </fieldset>
+
+
+
+                <!-- Feedback Message -->
+                <div class="feedback-field">
+
+                    <label for="feedbackMessage">Your Feedback</label>
+
+                    <textarea
+                        id="feedbackMessage"
+                        name="message"
+                        rows="5"
+                        maxlength="2000"
+                        placeholder="Share your thoughts, suggestions or experience..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- Submit Button -->
+                <button type="submit" class="feedback-submit-btn">
+                    Submit Feedback →
+                </button>
+
+
+                <p
+                    id="feedbackStatus"
+                    class="feedback-status"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ABOUT SECTION -->
     <section id="about" class="about section-padding">
 
         <div class="about-content">
 
             <span class="section-label">OUR PURPOSE</span>
 
-            <h2>Connecting People with the <span>Roots of Mithila</span></h2>
+            <h2>
+                Connecting People with the
+                <span>Roots of Mithila</span>
+            </h2>
 
             <p>
                 Our mission is to connect people with the rich
@@ -299,12 +658,19 @@
                 to everyone, everywhere.
             </p>
 
+
             <div class="about-highlight">
+
                 <span>✿</span>
-                <strong>Preserving our roots. Connecting our future.</strong>
+
+                <strong>
+                    Preserving our roots. Connecting our future.
+                </strong>
+
             </div>
 
         </div>
+
 
         <div class="about-decoration">
             <span>❀</span>
@@ -315,28 +681,76 @@
     </section>
 
 
-    <!-- Footer -->
-    <footer class="footer">
 
-        <div class="footer-brand">
-            <span>✿</span>
-            Connecting Mithila Roots
-        </div>
+    <!-- Personal WhatsApp Contact Widget -->
+    <div class="whatsapp-widget">
 
-        <p>
-            Celebrating the culture, language and heritage of Mithila.
-        </p>
+        <details class="whatsapp-menu">
 
-        <div class="footer-bottom">
-            © 2026 Connecting Mithila Roots. All rights reserved.
-        </div>
-
-    </footer>
+            <summary class="whatsapp-float-button">
+                <span>💬</span>
+                <span>Connect with Me</span>
+            </summary>
 
 
+            <div class="whatsapp-options">
+
+                <div class="whatsapp-menu-heading">
+
+                    <strong>Let's Connect!</strong>
+
+                    <p>How would you like to connect?</p>
+
+                </div>
+
+
+
+                <!-- Business & Collaboration -->
+                <a
+                    href="https://wa.me/919934593268?text=Hi%2C%20I%20would%20like%20to%20discuss%20a%20business%20collaboration%20with%20you."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="whatsapp-option"
+                >
+
+                    <span class="whatsapp-option-icon">🤝</span>
+
+                    <span>
+                        <strong>Business & Collaboration</strong>
+                        <small>Business enquiries and partnerships</small>
+                    </span>
+
+                </a>
+
+
+
+                <!-- Talk in Maithili -->
+                <a
+                    href="https://wa.me/919934593268?text=Hi%2C%20I%20want%20to%20practice%20speaking%20Maithili%20and%20improve%20my%20communication.%20Can%20I%20talk%20with%20you%3F"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="whatsapp-option"
+                >
+
+                    <span class="whatsapp-option-icon">🗣️</span>
+
+                    <span>
+                        <strong>Talk in Maithili</strong>
+                        <small>Practice Maithili communication</small>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </details>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
 </html>
-
- 
